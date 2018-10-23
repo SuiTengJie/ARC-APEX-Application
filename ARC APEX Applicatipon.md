@@ -108,3 +108,11 @@ np.savetxt("W_2calss_int.txt", w_val*100, fmt="%d", delimiter=",")
 
 
 
+
+----------
+
+Written by Tengjie
+
+20/23/2018
+
+
