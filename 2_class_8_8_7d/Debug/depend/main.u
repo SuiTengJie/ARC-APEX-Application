@@ -1,0 +1,10 @@
+main.o: ../main.c C:/STJ/SW_INSTALL/metaware/MetaWare/arc/inc\stdio.h \
+  C:/STJ/SW_INSTALL/metaware/MetaWare/arc/inc\features.h \
+  C:/STJ/SW_INSTALL/metaware/MetaWare/arc/inc\sizet.h \
+  C:/STJ/SW_INSTALL/metaware/MetaWare/arc/inc\_stdarg.h \
+  C:/STJ/SW_INSTALL/metaware/MetaWare/arc/inc\_na.h \
+  C:/STJ/SW_INSTALL/metaware/MetaWare/arc/inc\math.h \
+  C:/STJ/SW_INSTALL/metaware/MetaWare/arc/inc\time.h \
+  C:/STJ/SW_INSTALL/metaware/MetaWare/arc/inc\arc/arc_timer.h \
+  C:/STJ/SW_INSTALL/metaware/MetaWare/arc/inc\sys/_timespec.h \
+  C:/STJ/SW_INSTALL/metaware/MetaWare/arc/inc\xlocale.h

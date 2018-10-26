@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="com.arc.cdt.toolchain.av2em.exeDebugConfig.1399381614">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.arc.cdt.toolchain.av2em.exeDebugConfig.1399381614" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.MakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.arc.cdt.toolchain.ARCLinkerErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.arc.cdt.toolchain.ARCCompilerErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.arc.cdt.toolchain.ARCAssemblerErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf" description="" errorParsers="com.arc.cdt.toolchain.ARCCompilerErrorParser;com.arc.cdt.toolchain.ARCLinkerErrorParser;com.arc.cdt.toolchain.ARCAssemblerErrorParser;org.eclipse.cdt.core.MakeErrorParser" id="com.arc.cdt.toolchain.av2em.exeDebugConfig.1399381614" name="Debug" parent="com.arc.cdt.toolchain.av2em.exeDebugConfig">
+					<folderInfo id="com.arc.cdt.toolchain.av2em.exeDebugConfig.1399381614." name="/" resourcePath="">
+						<toolChain id="com.arc.cdt.toolchain.av2em.exeToolChainDebug.1294732144" superClass="com.arc.cdt.toolchain.av2em.exeToolChainDebug">
+							<targetPlatform id="hcTargetPlatform.22316704" isAbstract="false" name="Generic platform" superClass="hcTargetPlatform"/>
+							<builder buildPath="${workspace_loc:/2_class_8_8_7d}/Debug" id="makeBuilder.692033448" managedBuildOn="true" name="Gnu Make Builder.Debug" superClass="makeBuilder"/>
+							<tool id="av2em.exe.debug.exeCompilerDebug.1117756858" superClass="av2em.exe.debug.exeCompilerDebug">
+								<option id="arc.compiler.options.target.version.1431083546" isActive="false" superClass="arc.compiler.options.target.version" value="arc.compiler.options.target.arcv2em" valueType="enumerated"/>
+								<option id="arc.compiler.options.arcv2emcore.901357366" isActive="false" superClass="arc.compiler.options.arcv2emcore" value="arc.compiler.options.arcv2emcore.core2" valueType="enumerated"/>
+								<option id="arc.compiler.options.bs.759119890" isActive="false" superClass="arc.compiler.options.bs" value="true" valueType="boolean"/>
+								<option id="arc.compiler.options.sa.1510510841" isActive="false" superClass="arc.compiler.options.sa" value="true" valueType="boolean"/>
+								<option id="arc.compiler.options.mpyEMoption.1086255663" isActive="false" superClass="arc.compiler.options.mpyEMoption" value="arc.options.mpyoption.mpyd" valueType="enumerated"/>
+								<option id="arc.compiler.options.mpyHSoption.1305407398" isActive="false" superClass="arc.compiler.options.mpyHSoption" value="arc.options.mpyoption.hsmpyd" valueType="enumerated"/>
+								<option id="arc.compiler.options.div_rem.928875029" isActive="false" superClass="arc.compiler.options.div_rem" value="arc.options.divrem.radix2" valueType="enumerated"/>
+								<option id="arc.compiler.options.bitscan.1508249935" isActive="false" superClass="arc.compiler.options.bitscan" value="true" valueType="boolean"/>
+								<option id="arc.compiler.options.swap.1539871806" isActive="false" superClass="arc.compiler.options.swap" value="true" valueType="boolean"/>
+								<option id="arc.compiler.options.cd.243920071" isActive="false" superClass="arc.compiler.options.cd" value="true" valueType="boolean"/>
+								<option id="arc.compiler.options.timers.timer0.569026726" isActive="false" superClass="arc.compiler.options.timers.timer0" value="true" valueType="boolean"/>
+								<option id="arc.compiler.options.timers.timer1.139597595" isActive="false" superClass="arc.compiler.options.timers.timer1" value="true" valueType="boolean"/>
+								<option id="arc.compiler.options.dsp2.641320783" isActive="false" superClass="arc.compiler.options.dsp2" value="true" valueType="boolean"/>
+								<option id="arc.compiler.options.dspComplex.1142341008" isActive="false" superClass="arc.compiler.options.dspComplex" value="true" valueType="boolean"/>
+								<option id="arc.compiler.options.dspDivsqrt.169084301" isActive="false" superClass="arc.compiler.options.dspDivsqrt" value="radix2" valueType="enumerated"/>
+								<option id="arc.compiler.options.dspAccshift.2118315575" isActive="false" superClass="arc.compiler.options.dspAccshift" value="limited" valueType="enumerated"/>
+								<option id="arc.compiler.options.dma.1553884653" isActive="false" superClass="arc.compiler.options.dma" value="true" valueType="boolean"/>
+								<option id="arc.arc.compiler.options.harvard.1406764055" isActive="false" superClass="arc.arc.compiler.options.harvard" value="true" valueType="boolean"/>
+								<option id="arc.compiler.options.stack_check.809825097" isActive="false" superClass="arc.compiler.options.stack_check" value="true" valueType="boolean"/>
+								<option id="arc.compiler.options.pc_width.1882925175" isActive="false" superClass="arc.compiler.options.pc_width" value="com.arc.cdt.toolchain.arc.pcwidth.32" valueType="enumerated"/>
+								<option id="arc.compiler.options.bcf.877207988" isActive="false" superClass="arc.compiler.options.bcf" value="C:/STJ/EMSK/arcem7d.tcf" valueType="string"/>
+								<inputType id="com.arc.cdt.toolchain.arc.ccac.inputTypeCPP.1926942695" name="MetaWare C++ Input" superClass="com.arc.cdt.toolchain.arc.ccac.inputTypeCPP"/>
+								<inputType id="com.arc.cdt.toolchain.arc.ccac.inputTypeC.1617562378" name="MetaWare C Input" superClass="com.arc.cdt.toolchain.arc.ccac.inputTypeC"/>
+								<inputType id="com.arc.cdt.toolchain.arc.inputTypeCL.1573730022" name="MetaWare OpenCL" superClass="com.arc.cdt.toolchain.arc.inputTypeCL"/>
+							</tool>
+							<tool id="com.arc.cdt.toolchain.av2em.asmDebugExe.2055248610" superClass="com.arc.cdt.toolchain.av2em.asmDebugExe">
+								<option id="arc.compiler.options.target.asm.version.518803601" isActive="false" superClass="arc.compiler.options.target.asm.version" value="arc.compiler.options.target.arcv2em" valueType="enumerated"/>
+								<option id="arc.compiler.options.asm.arcv2emcore.1074994771" isActive="false" superClass="arc.compiler.options.asm.arcv2emcore" value="arc.compiler.options.arcv2emcore.core2" valueType="enumerated"/>
+								<option id="arc.asm.options.bs.1186528181" isActive="false" superClass="arc.asm.options.bs" value="true" valueType="boolean"/>
+								<option id="arc.asm.options.sa.240353772" isActive="false" superClass="arc.asm.options.sa" value="true" valueType="boolean"/>
+								<option id="arc.asm.options.mpyEMoption.151696493" isActive="false" superClass="arc.asm.options.mpyEMoption" value="arc.options.mpyoption.mpyd" valueType="enumerated"/>
+								<option id="arc.asm.options.mpyHSoption.1843983109" isActive="false" superClass="arc.asm.options.mpyHSoption" value="arc.options.mpyoption.hsmpyd" valueType="enumerated"/>
+								<option id="arc.asm.options.div_rem.1673063973" isActive="false" superClass="arc.asm.options.div_rem" value="arc.options.divrem.radix2" valueType="enumerated"/>
+								<option id="arc.asm.options.bitscan.1178983219" isActive="false" superClass="arc.asm.options.bitscan" value="true" valueType="boolean"/>
+								<option id="arc.asm.options.swap.1761523244" isActive="false" superClass="arc.asm.options.swap" value="true" valueType="boolean"/>
+								<option id="arc.asm.options.cd.32484189" isActive="false" superClass="arc.asm.options.cd" value="true" valueType="boolean"/>
+								<option id="arc.asm.options.timers.timer0.445622898" isActive="false" superClass="arc.asm.options.timers.timer0" value="true" valueType="boolean"/>
+								<option id="arc.asm.options.timers.timer1.1363850175" isActive="false" superClass="arc.asm.options.timers.timer1" value="true" valueType="boolean"/>
+								<option id="arc.asm.options.dsp2.1741670537" isActive="false" superClass="arc.asm.options.dsp2" value="true" valueType="boolean"/>
+								<option id="arc.asm.options.dspComplex.1910304079" isActive="false" superClass="arc.asm.options.dspComplex" value="true" valueType="boolean"/>
+								<option id="arc.asm.options.dspDivsqrt.1726553495" isActive="false" superClass="arc.asm.options.dspDivsqrt" value="radix2" valueType="enumerated"/>
+								<option id="arc.asm.options.dspAccshift.699794808" isActive="false" superClass="arc.asm.options.dspAccshift" value="limited" valueType="enumerated"/>
+								<option id="arc.asm.options.dma.675391882" isActive="false" superClass="arc.asm.options.dma" value="true" valueType="boolean"/>
+								<option id="arc.asm.options.stack_check.1147938052" isActive="false" superClass="arc.asm.options.stack_check" value="true" valueType="boolean"/>
+								<inputType id="com.arc.cdt.toolchain.asminput.1846205721" name="Assembler Inputs" superClass="com.arc.cdt.toolchain.asminput"/>
+							</tool>
+							<tool id="com.arc.cdt.toolchain.av2em.exeLinkerDebug.1184278419" superClass="com.arc.cdt.toolchain.av2em.exeLinkerDebug">
+								<option id="com.arc.cdt.toolchain.option.linker.autoGenLCF.1319975356" isActive="false" superClass="com.arc.cdt.toolchain.option.linker.autoGenLCF" value="true" valueType="boolean"/>
+								<option id="arc.linker.options.target.version.449537104" isActive="false" superClass="arc.linker.options.target.version" value="arc.compiler.options.target.arcv2em" valueType="enumerated"/>
+								<option id="com.arc.cdt.toolchain.option.linker.svr3.488421347" isActive="false" superClass="com.arc.cdt.toolchain.option.linker.svr3" valueType="userObjs">
+									<listOptionValue builtIn="false" value="${ProjDirPath}/arcem7d.lcf"/>
+								</option>
+								<option id="arc.compiler.options.linker.arcv2emcore.1997225132" isActive="false" superClass="arc.compiler.options.linker.arcv2emcore" value="arc.compiler.options.arcv2emcore.core2" valueType="enumerated"/>
+								<option id="arc.linker.options.bs.155666635" isActive="false" superClass="arc.linker.options.bs" value="true" valueType="boolean"/>
+								<option id="arc.linker.options.sa.94799531" isActive="false" superClass="arc.linker.options.sa" value="true" valueType="boolean"/>
+								<option id="arc.linker.options.mpyEMoption.2096676976" isActive="false" superClass="arc.linker.options.mpyEMoption" value="arc.options.mpyoption.mpyd" valueType="enumerated"/>
+								<option id="arc.linker.options.mpyHSoption.293929953" isActive="false" superClass="arc.linker.options.mpyHSoption" value="arc.options.mpyoption.hsmpyd" valueType="enumerated"/>
+								<option id="arc.linker.options.div_rem.459887932" isActive="false" superClass="arc.linker.options.div_rem" value="arc.options.divrem.radix2" valueType="enumerated"/>
+								<option id="arc.linker.options.bitscan.1291687837" isActive="false" superClass="arc.linker.options.bitscan" value="true" valueType="boolean"/>
+								<option id="arc.linker.options.swap.687410665" isActive="false" superClass="arc.linker.options.swap" value="true" valueType="boolean"/>
+								<option id="arc.linker.options.cd.574663693" isActive="false" superClass="arc.linker.options.cd" value="true" valueType="boolean"/>
+								<option id="arc.linker.options.dsp2.257406435" isActive="false" superClass="arc.linker.options.dsp2" value="true" valueType="boolean"/>
+								<option id="arc.linker.options.dspComplex.934110706" isActive="false" superClass="arc.linker.options.dspComplex" value="true" valueType="boolean"/>
+								<option id="arc.linker.options.dspDivsqrt.1085408232" isActive="false" superClass="arc.linker.options.dspDivsqrt" value="radix2" valueType="enumerated"/>
+								<option id="arc.linker.options.dspAccshift.1658451340" isActive="false" superClass="arc.linker.options.dspAccshift" value="limited" valueType="enumerated"/>
+								<option id="arc.linker.options.stack_check.868761601" isActive="false" superClass="arc.linker.options.stack_check" value="true" valueType="boolean"/>
+								<option id="arc.linker.options.pc_width.1718342344" isActive="false" superClass="arc.linker.options.pc_width" value="com.arc.cdt.toolchain.arc.pcwidth.32" valueType="enumerated"/>
+								<option id="arc.linker.options.harvard.616574803" isActive="false" superClass="arc.linker.options.harvard" value="true" valueType="boolean"/>
+								<option id="arc.arc.linker.options.xtimer.453590730" isActive="false" superClass="arc.arc.linker.options.xtimer" value="1" valueType="enumerated"/>
+								<inputType id="com.arc.cdt.toolchain.linker.input.1423238774" name="Linker Input" superClass="com.arc.cdt.toolchain.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.arc.cdt.toolchain.arc.archiver.749040884" superClass="com.arc.cdt.toolchain.arc.archiver"/>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="com.arc.cdt.toolchain.av2em.exeReleaseConfig.1883861558">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.arc.cdt.toolchain.av2em.exeReleaseConfig.1883861558" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.MakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.arc.cdt.toolchain.ARCLinkerErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.arc.cdt.toolchain.ARCCompilerErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.arc.cdt.toolchain.ARCAssemblerErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release" cleanCommand="rm -rf" description="" errorParsers="com.arc.cdt.toolchain.ARCCompilerErrorParser;com.arc.cdt.toolchain.ARCLinkerErrorParser;com.arc.cdt.toolchain.ARCAssemblerErrorParser;org.eclipse.cdt.core.MakeErrorParser" id="com.arc.cdt.toolchain.av2em.exeReleaseConfig.1883861558" name="Release" parent="com.arc.cdt.toolchain.av2em.exeReleaseConfig">
+					<folderInfo id="com.arc.cdt.toolchain.av2em.exeReleaseConfig.1883861558." name="/" resourcePath="">
+						<toolChain id="com.arc.cdt.toolchain.av2em.exeReleaseToolChain.554049014" superClass="com.arc.cdt.toolchain.av2em.exeReleaseToolChain">
+							<targetPlatform id="hcTargetPlatform.556126073" isAbstract="false" name="Generic platform" superClass="hcTargetPlatform"/>
+							<builder buildPath="${workspace_loc:/2_class_8_8_7d}/Release" id="makeBuilder.697575848" managedBuildOn="true" name="Gnu Make Builder.Release" superClass="makeBuilder"/>
+							<tool id="arc.cdt.toolchain.av2em.exeCompilerRelease.1379868340" superClass="arc.cdt.toolchain.av2em.exeCompilerRelease">
+								<inputType id="com.arc.cdt.toolchain.arc.ccac.inputTypeCPP.867576463" name="MetaWare C++ Input" superClass="com.arc.cdt.toolchain.arc.ccac.inputTypeCPP"/>
+								<inputType id="com.arc.cdt.toolchain.arc.ccac.inputTypeC.384380929" name="MetaWare C Input" superClass="com.arc.cdt.toolchain.arc.ccac.inputTypeC"/>
+								<inputType id="com.arc.cdt.toolchain.arc.inputTypeCL.1269589475" name="MetaWare OpenCL" superClass="com.arc.cdt.toolchain.arc.inputTypeCL"/>
+							</tool>
+							<tool id="com.arc.cdt.toolchain.av2em.asmReleaseExe.1064183807" superClass="com.arc.cdt.toolchain.av2em.asmReleaseExe">
+								<inputType id="com.arc.cdt.toolchain.asminput.1929777209" name="Assembler Inputs" superClass="com.arc.cdt.toolchain.asminput"/>
+							</tool>
+							<tool id="com.arc.cdt.toolchain.av2em.exelinkerRelease.1320199104" superClass="com.arc.cdt.toolchain.av2em.exelinkerRelease">
+								<inputType id="com.arc.cdt.toolchain.linker.input.1347236085" name="Linker Input" superClass="com.arc.cdt.toolchain.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.arc.cdt.toolchain.arc.archiver.1083766802" superClass="com.arc.cdt.toolchain.arc.archiver"/>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="2_class_8_8_7d.com.arc.cdt.toolchain.arc.av2em.exeProject.132326640" name="Executable" projectType="com.arc.cdt.toolchain.arc.av2em.exeProject"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="com.arc.cdt.toolchain.av2em.exeDebugConfig.1399381614;com.arc.cdt.toolchain.av2em.exeDebugConfig.1399381614.;av2em.exe.debug.exeCompilerDebug.1117756858;com.arc.cdt.toolchain.arc.ccac.inputTypeCPP.1926942695">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.arc.cdt.toolchain.av2em.exeReleaseConfig.1883861558;com.arc.cdt.toolchain.av2em.exeReleaseConfig.1883861558.;arc.cdt.toolchain.av2em.exeCompilerRelease.1379868340;com.arc.cdt.toolchain.arc.ccac.inputTypeCPP.867576463">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.arc.cdt.toolchain.av2em.exeReleaseConfig.1883861558;com.arc.cdt.toolchain.av2em.exeReleaseConfig.1883861558.;arc.cdt.toolchain.av2em.exeCompilerRelease.1379868340;com.arc.cdt.toolchain.arc.ccac.inputTypeC.384380929">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.arc.cdt.toolchain.av2em.exeDebugConfig.1399381614;com.arc.cdt.toolchain.av2em.exeDebugConfig.1399381614.;av2em.exe.debug.exeCompilerDebug.1117756858;com.arc.cdt.toolchain.arc.ccac.inputTypeC.1617562378">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.arc.cdt.toolchain.av2em.exeReleaseConfig.1883861558;com.arc.cdt.toolchain.av2em.exeReleaseConfig.1883861558.;arc.cdt.toolchain.av2em.exeCompilerRelease.1379868340;com.arc.cdt.toolchain.arc.inputTypeCL.1269589475">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.arc.cdt.toolchain.av2em.exeDebugConfig.1399381614;com.arc.cdt.toolchain.av2em.exeDebugConfig.1399381614.;av2em.exe.debug.exeCompilerDebug.1117756858;com.arc.cdt.toolchain.arc.inputTypeCL.1573730022">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+</cproject>

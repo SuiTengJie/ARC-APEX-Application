@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<windowLayout version="3" model="sash">
+  <mdiFrame model="sash" state="maximized">
+    <splitPane orientation="horizontal" divider="635">
+      <splitPane orientation="vertical" divider="409">
+        <pane>
+          <tabbedPanel name="locals" selected="1">
+            <toolBar id="0" visible="0"/>
+            <toolBar id="1" visible="1"/>
+            <toolBar id="2" visible="0"/>
+          </tabbedPanel>
+        </pane>
+        <pane>
+          <tabbedPanel name="stack" selected="1">
+            <toolBar id="0" visible="0"/>
+            <toolBar id="1" visible="1"/>
+            <toolBar id="2" visible="0"/>
+          </tabbedPanel>
+        </pane>
+      </splitPane>
+      <splitPane orientation="vertical" divider="543">
+        <pane>
+          <tabbedPanel name="source" selected="1">
+            <toolBar id="0" visible="0"/>
+            <toolBar id="1" visible="1"/>
+            <toolBar id="2" visible="0"/>
+            <toolBar id="3" visible="0"/>
+          </tabbedPanel>
+        </pane>
+        <splitPane orientation="horizontal" divider="690">
+          <pane>
+            <tabbedPanel name="break">
+              <toolBar id="0" visible="0"/>
+              <toolBar id="1" visible="1"/>
+              <toolBar id="2" visible="0"/>
+            </tabbedPanel>
+            <tabbedPanel name="watchdisp">
+              <toolBar id="0" visible="0"/>
+              <toolBar id="1" visible="1"/>
+              <toolBar id="2" visible="0"/>
+            </tabbedPanel>
+            <tabbedPanel name="command" selected="1"/>
+          </pane>
+          <splitPane orientation="horizontal" divider="773">
+            <splitPane orientation="vertical" divider="531">
+              <pane>
+                <tabbedPanel name="mem" selected="1">
+                  <toolBar id="0" visible="0"/>
+                  <toolBar id="1" visible="1"/>
+                  <toolBar id="2" visible="0"/>
+                  <valueUpdate name="data_addr_eval" value="0x20000000"/>
+                </tabbedPanel>
+              </pane>
+              <pane>
+                <tabbedPanel name="auxregs" selected="1">
+                  <toolBar id="0" visible="0"/>
+                  <toolBar id="1" visible="1"/>
+                  <toolBar id="2" visible="0"/>
+                </tabbedPanel>
+              </pane>
+            </splitPane>
+            <splitPane orientation="vertical" divider="531">
+              <pane>
+                <tabbedPanel name="dcache" selected="1">
+                  <toolBar id="0" visible="0"/>
+                  <toolBar id="1" visible="1"/>
+                  <toolBar id="2" visible="0"/>
+                </tabbedPanel>
+              </pane>
+              <pane>
+                <tabbedPanel name="icache" selected="1">
+                  <toolBar id="0" visible="0"/>
+                  <toolBar id="1" visible="1"/>
+                  <toolBar id="2" visible="0"/>
+                </tabbedPanel>
+              </pane>
+            </splitPane>
+          </splitPane>
+        </splitPane>
+      </splitPane>
+    </splitPane>
+  </mdiFrame>
+</windowLayout>
