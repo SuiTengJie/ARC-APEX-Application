@@ -1,9 +1,9 @@
 ##ARC APEX在神经网络识别数字中的应用
-###1. Introduction
+### 1. Introduction
 使用神经网络进行数字识别的模型如下图所示。使用的是最简单的BP神经网络，输入为8*8像素的数字图片，二分类输出。可以注意到，在预测阶段，需要的运算有两个：W\*X+B的矩阵乘法和softmax运算。在本文所做工作中，我们集中解决矩阵乘法的加速。易知，如果使用纯C语言实现矩阵乘法需要大量时钟周期，而如果扩展一个APEX指令，则可以在一个时钟周期内得到运算结果，这就是本文的目的。
 ![](https://i.imgur.com/6ncDTbm.png)
 
-###2. How to get the images
+### 2. How to get the images
 由于没有找到符合要求的数据集，所以使用python自己生成8*8的数字图片集。程序文件为：generate_imgs.py. 画图所使用的python库为 Python Imaging Library (PIL)。
 
 - 在该程序的开头即定义了图片存放的目录：
@@ -17,7 +17,7 @@ path_img = "data_pngs/"
 
 参考链接：[https://www.cnblogs.com/AdaminXie/p/8379749.html](https://www.cnblogs.com/AdaminXie/p/8379749.html)
 
-###3. Tensorflow 训练模型
+### 3. Tensorflow 训练模型
 我们采用APEX的核心目的是加速预测阶段的矩阵计算，这是出于现实角度出发，在嵌入式设备中一般都是采用训练好的神经网络模型，直接进行预测阶段。这里我们采用Tensorflow来训练模型。程序文件为：Softmax.py和Softmax\_2\_class.py。前者是10分类的，输出节点为10；后者是2分类，只有两个输出节点，我们目前使用的是Softmax\_2\_class.py。
 
 在该程序的开头，是几个针对数字图片集的接口函数。
@@ -36,7 +36,7 @@ path_img = "data_pngs/"
 np.savetxt("W_2calss_int.txt", w_val*100, fmt="%d", delimiter=",")
 ```
 
-###4. 在ARChitect中扩展APEX指令
+### 4. 在ARChitect中扩展APEX指令
 
 下面的命令仅限Synopsys内部使用。下面的命令是建立ARChitect工程的命令，其中最后一句包含了一个库叫Demolib2，作者所扩展的所有库均在其中，加速矩阵运算的APEX名为`NN_instruction_assignW`。
 
@@ -74,7 +74,7 @@ np.savetxt("W_2calss_int.txt", w_val*100, fmt="%d", delimiter=",")
 ![](https://i.imgur.com/Zxj3gYW.png)
 可以看到首先使用synplify_premier命令执行综合，生成edf网表文件；然后将生成的edf文件和约束文件拷贝到fpga文件夹下，并在该文件夹下执行了xflow命令生成最终的bit。
 
-###5. 测试APEX指令的性能
+### 5. 测试APEX指令的性能
 对比使用纯软件实现与使用APEX实现两种方案所消耗的时钟周期数，来评估APEX加速的效果。
 
 在Metaware中建立工程时需要注意，Toolchains选项选择`ARC EM Generic`一项，在ARChitect-generated Tool Configuration File选择中选`Browse to a TCF file`,相应的tcf文件可以在下面链接中下载到。
@@ -90,7 +90,7 @@ np.savetxt("W_2calss_int.txt", w_val*100, fmt="%d", delimiter=",")
 
 ![](https://i.imgur.com/mlaznZY.png)
 
-###6. 将ARC CORE与扩展的APEX分开
+### 6. 将ARC CORE与扩展的APEX分开
 为了能够让ARC的用户独立探索APEX的应用，同时又不接触到ARC CORE的细节，提出了如下的设计flow。
 
 ![](https://i.imgur.com/kg9Gxc1.png)
@@ -101,7 +101,7 @@ np.savetxt("W_2calss_int.txt", w_val*100, fmt="%d", delimiter=",")
 4. 在ISE GUI中依次加入core\_chip.edf, core\_chip.ucf, iccm0.bmm, Apex_extension.v四个文件，并依照par\_implement.opt和bitgen.opt两个文件配置ISE布局布线及生成bit过程中的选项。最后生成bit。
 
 
-###7. 如何将bit下载到FPGA以及如下下载elf到EMSK
+### 7. 如何将bit下载到FPGA以及如下下载elf到EMSK
 1. Xilinx提供了一个工具可以方便地将bit文件下载到FPGA中：iMPACT。该过程在EMSK的文档“ARC EM Starter Kit Guide”中的Appendix C中有详细的操作步骤，不赘述。
 2. 在windows下打开cmd命令行，cd到目标文件夹下，使用`mdb -cl -digilent 2_class_8_8_7d.elf`命令，即可用命令行模式开启Metaware debug。`run`命令可以使程序运行。如果去掉`-cl`则可以打开Metaware debug的GUI模式进行调试。
 
